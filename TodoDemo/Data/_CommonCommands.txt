@@ -1,0 +1,2 @@
+﻿Add-Migration -Context TodoContext -OutputDir Data\TodoMigration Initial
+Update-Database -Context TodoContext
