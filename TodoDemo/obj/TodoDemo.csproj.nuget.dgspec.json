@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mads_\\source\\repos\\todo\\TodoDemoSolution\\TodoDemo\\TodoDemo.csproj": {}
+    "C:\\Users\\mads_\\Source\\Repos\\todo\\TodoDemo\\TodoDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mads_\\source\\repos\\todo\\TodoDemoSolution\\TodoDemo\\TodoDemo.csproj": {
+    "C:\\Users\\mads_\\Source\\Repos\\todo\\TodoDemo\\TodoDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mads_\\source\\repos\\todo\\TodoDemoSolution\\TodoDemo\\TodoDemo.csproj",
+        "projectUniqueName": "C:\\Users\\mads_\\Source\\Repos\\todo\\TodoDemo\\TodoDemo.csproj",
         "projectName": "TodoDemo",
-        "projectPath": "C:\\Users\\mads_\\source\\repos\\todo\\TodoDemoSolution\\TodoDemo\\TodoDemo.csproj",
+        "projectPath": "C:\\Users\\mads_\\Source\\Repos\\todo\\TodoDemo\\TodoDemo.csproj",
         "packagesPath": "C:\\Users\\mads_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mads_\\source\\repos\\todo\\TodoDemoSolution\\TodoDemo\\obj\\",
+        "outputPath": "C:\\Users\\mads_\\Source\\Repos\\todo\\TodoDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mads_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,10 +56,6 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[6.0.8, )"
-            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -69,6 +65,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

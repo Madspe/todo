@@ -8,10 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(connectionString));
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(10, 9, 12))));
 
 builder.Services.AddDbContext<TodoContext>(options =>
-    options.UseSqlite(connectionString));
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(10, 9, 12))));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 

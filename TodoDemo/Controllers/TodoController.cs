@@ -48,7 +48,7 @@ namespace TodoDemo.Controllers
         // GET: Todo/Create
         public IActionResult Create()
         {
-            ViewData["TodoTypeId"] = new SelectList(_context.Set<TodoType>(), "Id", "UteInne");
+            ViewData["TodoTypeId"] = new SelectList(_context.TodoType, "Id", "UteInne");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace TodoDemo.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TodoTypeId"] = new SelectList(_context.Set<TodoType>(), "Id", "UteInne", todo.TodoTypeId);
+            ViewData["TodoTypeId"] = new SelectList(_context.TodoType, "Id", "UteInne", todo.TodoTypeId);
             return View(todo);
         }
 
@@ -82,7 +82,7 @@ namespace TodoDemo.Controllers
             {
                 return NotFound();
             }
-            ViewData["TodoTypeId"] = new SelectList(_context.Set<TodoType>(), "Id", "UteInne", todo.TodoTypeId);
+            ViewData["TodoTypeId"] = new SelectList(_context.TodoType, "Id", "UteInne", todo.TodoTypeId);
             return View(todo);
         }
 
@@ -118,7 +118,7 @@ namespace TodoDemo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TodoTypeId"] = new SelectList(_context.Set<TodoType>(), "Id", "UteInne", todo.TodoTypeId);
+            ViewData["TodoTypeId"] = new SelectList(_context.TodoType, "Id", "UteInne", todo.TodoTypeId);
             return View(todo);
         }
 
